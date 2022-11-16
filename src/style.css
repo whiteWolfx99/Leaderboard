@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: 650;
+}
+
+section {
+  padding: 30px 60px 60px 60px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.recentscore {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.recentscore h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.recentscore button {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #000;
+}
+
+li {
+  padding: 3px 5px 3px 5px;
+  font-weight: 700;
+}
+
+li:nth-child(even) {
+  background-color: #ccc;
+}
+
+.col2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.col2 h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 3px solid #000;
+  color: #000;
+}
+
+.End-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.End-flex button {
+  margin: 0;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 3px solid #000;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .row {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 30px;
+    font-weight: 650;
+  }
+
+  .col2 h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .recentscore h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
