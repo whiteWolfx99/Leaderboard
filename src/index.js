@@ -12,7 +12,7 @@ const refresher = async () => {
   const res = await api.getmethod();
   const Leaderboards = new Leaderboard(res);
 
-  scorelist.innerHTML = `<li class="list"><span class="head_span">username</span> <span class="head_span">scores</span></li>`
+  scorelist.innerHTML = '<li class="list"><span class="head_span">username</span> <span class="head_span">scores</span></li>';
   Leaderboards.username.forEach((usernames) => {
     scorelist.innerHTML += `
     ${
