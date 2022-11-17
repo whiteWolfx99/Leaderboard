@@ -1,17 +1,21 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: setup project
+# Leaderboard: hit the API
 
 ## Description
 
-In this activity you will set up a JavaScript project for the Leaderboard list app, using *webpack* and *ES6* features, notably *modules*. You should develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, you will consume the Leaderboard API using JavaScript *async* and *await* and add some styling.
-
+In this activity you will continue working on the *Leaderboard list* app, sending and receiving data from/to the Leaderboard API.
 
 ### Project requirements
 
-- **IMPORTANT NOTE** This is the first time you will use [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md). Keep that in mind!
-- Create an **npm project with webpack**. (If you need a refresher, check the previous project or webpack exercise).
-- Write plain HTML markup with minimum styling (just to make the layout), because you will implement styles in the following steps. Use this wirefra
+- Read the [Leaderboard API documentation](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) to learn how to use this API.
+- Create a new game with the name of your choice by using the API.
+    - Make sure that you saved the ID of your game that will be returned by API.
+- Implement the "Refresh" button that will get all scores for a game created by you from the API (receiving data from the API and parsing the JSON).
+- Implement the form "Submit" button that will save a score for a game created by you (sending data to the API).
+- Use `arrow functions` instead of the `function` keyword.
+- Use `async` and `await` JavaScript features to consume the API.
+- No styling is required.
 
 ## Built With
 
