@@ -1,21 +1,26 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: hit the API
+# Leaderboard: final touches
 
 ## Description
 
-In this activity you will continue working on the *Leaderboard list* app, sending and receiving data from/to the Leaderboard API.
+In this activity you will finalize the *Leaderboard list* app, adding the styles needed to make it look great.
+
+*IMPORTANT NOTE: Read **all** requirements before you start building your project.*
+
+### General requirements
+
+- Make sure that there are [no linter errors](https://github.com/microverseinc/linters-config).
+- Make sure that you used correct flow [Gitflow](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/git-github/articles/gitflow.md).
+- Make sure that you documented your work [in a professional way](https://github.com/microverseinc/curriculum-transversal-skills/blob/main/documentation/articles/professional_repo_rules.md).
+
+### HTML/CSS requirements
+
+- Follow our list of [best practices for HTML & CSS](https://github.com/microverseinc/curriculum-html-css/blob/main/articles/html_css_best_practices.md).
 
 ### Project requirements
 
-- Read the [Leaderboard API documentation](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3) to learn how to use this API.
-- Create a new game with the name of your choice by using the API.
-    - Make sure that you saved the ID of your game that will be returned by API.
-- Implement the "Refresh" button that will get all scores for a game created by you from the API (receiving data from the API and parsing the JSON).
-- Implement the form "Submit" button that will save a score for a game created by you (sending data to the API).
-- Use `arrow functions` instead of the `function` keyword.
-- Use `async` and `await` JavaScript features to consume the API.
-- No styling is required.
+- At this point you should have a fully working app that uses only basic styles to make the layout work, according to this wireframe:
 
 ## Built With
 
