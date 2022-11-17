@@ -40,12 +40,14 @@
               maxlength="8"
               type="text"
               class="name"
+              required
               placeholder="Your name"
             />
             <input
               maxlength="3"
               type="text"
               class="score"
+              required
               oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
               placeholder="Your score"
             />

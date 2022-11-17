@@ -12,11 +12,12 @@ const refresher = async () => {
   const res = await api.getmethod();
   const Leaderboards = new Leaderboard(res);
 
+  scorelist.innerHTML = `<li class="list"><span class="head_span">username</span> <span class="head_span">scores</span></li>`
   Leaderboards.username.forEach((usernames) => {
     scorelist.innerHTML += `
     ${
   usernames.user
-    ? `<li class="li">${usernames.user} : ${usernames.score}</li>`
+    ? `<li class="li"><span>${usernames.user} :</span> <span> ${usernames.score}</span></li>`
     : 'No data yet'
 } `;
   });

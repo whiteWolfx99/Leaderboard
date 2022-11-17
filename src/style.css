@@ -9,6 +9,8 @@
 
 header {
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 header h1 {
@@ -18,12 +20,15 @@ header h1 {
 
 section {
   padding: 30px 60px 60px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
-  width: 60%;
+  width: 55%;
 }
 
 .recentscore {
@@ -62,12 +67,58 @@ section {
   margin: 0;
   display: flex;
   flex-direction: column;
-  border: 3px solid #000;
+  border: 2px solid #000;
+  border-radius: 5px;
+  overflow-y: scroll;
+  height: 300px;
+}
+
+.force-overflow {
+  min-height: 450px;
+}
+
+.scorelist::-webkit-scrollbar-track {
+  background-color: #000;
+}
+
+.scorelist::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scorelist::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ccc;
+  border: 1px solid #000;
+}
+
+.head_span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 170px; 
+  color: #fff;
 }
 
 .li {
   padding: 3px 5px 3px 5px;
   font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.list {
+  padding: 3px 5px 3px 5px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 170px;
 }
 
 .li:nth-child(even) {
@@ -104,7 +155,7 @@ form input {
   justify-content: flex-end;
 }
 
-.End-flex button {
+.add {
   margin: 0;
   padding: 0 10px 0 10px;
   background-color: #fff;
@@ -114,6 +165,12 @@ form input {
   font-weight: 700;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.8);
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 @media screen and (max-width: 770px) {
