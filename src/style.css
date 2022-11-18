@@ -10,7 +10,7 @@
 header {
   padding: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 header h1 {
@@ -27,8 +27,9 @@ section {
 
 .row {
   display: flex;
-  justify-content: space-between;
-  width: 55%;
+  justify-content: center;
+  width: 75%;
+  gap: 100px;
 }
 
 .recentscore {

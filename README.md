@@ -20,8 +20,6 @@ In this activity you will finalize the *Leaderboard list* app, adding the styles
 
 ### Project requirements
 
-- At this point you should have a fully working app that uses only basic styles to make the layout work, according to this wireframe:
-
 ## Built With
 
 - HTML
