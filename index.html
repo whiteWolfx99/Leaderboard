@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Getting Started</title>
+  <script defer src="runtime.js"></script><script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+
+    <section>
+      <div class="row">
+        <div class="col1">
+          <div class="recentscore">
+            <h2>Recent scores</h2>
+            <button class="refresh">Refresh</button>
+          </div>
+
+          <ul class="scorelist"></ul>
+        </div>
+
+        <div class="col2">
+          <h2>Add your score</h2>
+          <form>
+            <input
+              maxlength="8"
+              type="text"
+              class="name"
+              required
+              placeholder="Your name"
+            />
+            <input
+              maxlength="3"
+              type="text"
+              class="score"
+              oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+              placeholder="Your score"
+            />
+            <div class="End-flex">
+              <button type="button" class="add">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
